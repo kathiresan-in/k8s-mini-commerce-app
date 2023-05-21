@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mini-ecommerce-pod
+  labels:
+    name: mini-ecommerce
+spec:
+  containers:
+    - name: mini-ecommerce-pod
+      image: kathiresan2in/mini-ecommerce-application:latest
+      ports:
+        - containerPort: 8080
